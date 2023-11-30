@@ -1,0 +1,53 @@
+/* for dropdown and alert */
+.drop-hover-box{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom: 1px soild #d7d7d7 !important;
+    font-weight: 400;
+}
+.drop-hover-box img{
+    width: 80px;
+    height: 100px;
+    
+}
+
+.my-choice1:hover .head-dropbox{
+    display: block;
+    position: absolute;
+    top: 100%;
+    
+    transform-origin: top;
+    animation-name: dropfade;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    right: 0;
+    width: 400px;
+}
+.my-choice1 .btn-close{
+    background: url(../IMAGE/white-close-50.png);
+}
+.my-choice1 li:hover .btn-close{
+    background: url(../IMAGE/icons8-close-50.png);
+}
+.my-choice1 ul li{
+    border-bottom: 1px solid #d7d7d7;
+}
+.my-choice1 ul li a{
+    padding: 0;
+}
+.my-choice1 ul li a .alert{
+    padding: 0 auto !important;
+}
+.subtotal button{
+    width: 95%;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    transition: all 0.5s;
+}
+.subtotal button:hover{
+    color: white;
+    background-color: #ef4836;
+    transition: all 0.5s;
+}

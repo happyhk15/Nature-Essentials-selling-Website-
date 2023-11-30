@@ -1,0 +1,81 @@
+.shop-page{
+    padding: 100px;
+    background-image: url(../IMAGE/product-detail-page.jpg);
+    color: white;
+    text-align: center;
+}
+.shop-page h1{
+    font-weight: 600;
+}
+.shop-page .breadcrumb{
+    align-items: center;
+    justify-content: center;
+}
+.shop-page .breadcrumb-item a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.45s;
+}
+.shop-page .breadcrumb-item a:hover{
+    color: #ef4836;
+}
+/* latest news */
+.latest-news{
+    text-align: center;
+}
+
+.news-details{
+    position: relative;
+    overflow: hidden;
+    /* border-radius: 20px !important; */
+}
+.news-details .card{
+    margin: 20px;
+    width: 90%;
+    overflow: hidden;
+    border-radius: 20px !important;
+}
+.date-month{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    height: 100px;
+    z-index: 3;
+    border: 3px solid white;
+    padding: 5px;
+}
+.date-month-inner{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    line-height: 14px;
+}
+.news-details .card-title a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    transition: all 0.5s
+}
+.news-details .card-title a:hover{
+    color: #ef4836;
+}
+/* pagination */
+.my-pagination .pagination .page-link{
+    color: #ef4836;
+    margin: 10px;
+    border: 1px solid #ef4836 !important;
+}
+.my-pagination .page-link i{
+    font-weight: 600;
+}
+.my-pagination .pagination .page-item.active .page-link{
+    background-color: #ef4836;
+    border-color: #ef4836;
+}
+.my-pagination .pagination .page-link:hover{
+    background-color: #ef4836;
+    color: white;
+}

@@ -1,0 +1,312 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.upper-nav a{
+    border-right: 1px solid #e1d7d7;
+    text-decoration: none;
+    height: 100%;
+    padding: 10px;
+}
+.main-nav a{
+    border: none !important;
+    font-size: 14px !important;
+    color: black !important;
+}
+.main-nav a.dropdown-item{
+    color: white !important;
+}
+#main-header .nav-item{
+    padding: 10px;
+}
+.upper-nav a:hover{
+    color: #ef4836 !important;
+}
+.upper-nav li a{
+    transition: all 0.3s;
+}
+.upper-nav li a:hover{
+    background: none !important;
+    color: white !important;
+    transform: translateX(5px);
+    transition: all 0.3s;
+}
+.head-dropbox{
+    top: 100%;
+    line-height: 15px;
+}
+.btn-group:hover .head-dropbox{
+    
+    display: block;
+    position: absolute;
+    top: 100%;
+    /* transition: all 0.01s !important; */
+    transform-origin: top;
+    animation-name: dropfade;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+
+/* for dropdown and alert */
+.drop-hover-box{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom: 1px soild #d7d7d7 !important;
+    font-weight: 400;
+}
+.drop-hover-box img{
+    width: 80px;
+    height: 100px;
+    
+}
+.my-choice1:hover .head-dropbox{
+    display: block;
+    position: absolute;
+    top: 100%;
+    
+    transform-origin: top;
+    animation-name: dropfade;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    right: 0;
+    width: 300px;
+}
+.my-choice1 .btn-close{
+    background: url(../IMAGE/white-close-50.png);
+}
+.my-choice1 li:hover .btn-close{
+    background: url(../IMAGE/icons8-close-50.png);
+}
+.my-choice1 ul li{
+    border-bottom: 1px solid #d7d7d7;
+}
+.my-choice1 ul li a{
+    padding: 0;
+}
+.my-choice1 ul li a .alert{
+    padding: 0 auto !important;
+}
+.subtotal button{
+    width: 95%;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    transition: all 0.5s;
+    border: none !important;
+}
+.subtotal button:hover{
+    color: white;
+    background-color: #ef4836;
+    transition: all 0.5s;
+}
+@keyframes dropfade {
+    0%{
+        opacity: 0;
+        transform:scaleY(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+.main-nav li a{
+    transition: all 0.3s;
+}
+.main-nav li a:hover{
+    color: #ef4836 !important;
+    transform: translateX(5px);
+    transition: all 0.3s;
+    background: none !important;
+}
+
+
+.my-choice1 .badge{
+    bottom: 12px;
+    left: 38px;
+    font-size: 12px !important;
+}
+.my-choice2 .badge{
+    bottom: 12px;
+    left: 38px;
+    font-size: 12px !important;
+}
+
+
+.nav-current-img{
+    width: 100%;
+    height: 45px;
+    background-image: url(../IMAGE/black-shoppingba.png);
+    background-size: cover;
+}
+.nav-current-img:hover{
+    background-image: url(../IMAGE/hover-shoppingbag.png);
+}
+.nav-whishlist-img{
+    width: 100%;
+    height: 45px;
+    background-image: url(../IMAGE/black-heart.png);
+    background-size: cover;
+}
+.nav-search-img{
+    width: 100%;
+    height: 45px;
+    background-image: url(../IMAGE/black-search.png);
+    background-size: cover;
+}
+.nav-whishlist-img:hover{
+    background-image: url(../IMAGE/hover-heart.png);
+}
+.nav-search-img:hover{
+    background-image: url(../IMAGE/hover-search.png);
+}
+/* footer start */
+.footer-section{
+    background-color: #272a2d;
+    padding: 60px 0;
+    color: white;
+}
+.newsletter-form input{
+    margin: auto;
+    width: 60%;
+    border-radius: 30px;
+    background-color: #3a3f42;
+    height: 60px;
+    color: #fff !important;
+    padding: 6px 80px 6px 30px;
+    border: none;
+}
+.newsletter-form input:focus{
+    background-color: #3a3f42;
+    box-shadow: none;
+    color: white;
+}
+.newsletter-form button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    position: absolute;
+    right: 22%;
+    top: 17px;
+}
+.newsletter-form button i{
+    color: #c1b696;
+}
+
+/* main footer */
+#my-footer{
+    border-top: 1px solid #4d4c4c;
+    background-color: #222528;
+    padding: 20px 0px;
+    color: white;
+}
+#my-footer .breadcrumb-item a{
+    text-decoration: none;
+    color: #a0a0a0;
+}
+#my-footer .breadcrumb-item:hover a{
+    color: #ef4836;
+}
+#my-footer .breadcrumb{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #4d4c4c;
+}
+
+.footer-bottom a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #a0a0a0;
+}
+
+.footer-bottom{
+    color: #a0a0a0;
+}
+.bottom-1 a:hover{
+    color: #ef4836;
+}
+.bottom-2{
+    border-left: 1px solid #4d4c4c;
+    border-right: 1px solid #4d4c4c   ;
+}
+.bottom-3 p{
+    color: #ab9f7c;
+    line-height: 15px;
+}
+.bottom-3 p a{
+    color: #a0a0a0;
+    text-decoration: none;
+}
+.bottom-3{
+    height: 100%;
+    border-right: 1px solid #4d4c4c;
+}
+.bottom-3 p:hover a{
+    color: #ef4836;
+}
+.bottom-4{
+    justify-content: center;
+    /* text-align: center; */
+    align-items: center;
+}
+/* modal */
+.modal-content{
+    padding: 50px 80px;
+}
+.modal-content img{
+    width: 100% !important;
+    height: 100%;
+}
+.modal-icon a{
+    padding-left: 12px !important;
+    border-radius: 100% !important;
+}
+.product-img img{
+    height: 100% !important;
+}
+@media screen and (min-width:0px) and (max-width:426px){
+    #first-nav{
+        justify-content:left !important;
+    }
+    .nav-current-img{
+        width: 45px;
+    }
+    .nav-search-img{
+        width: 45px !important;
+    }
+    .nav-whishlist-img{
+        margin-left: 5px;
+        width: 45px;
+    }
+    .my-choice1 .badge{
+        left: 35px;
+    }
+    .bottom-2{
+        border-left: none;
+        border-right: none;
+    }
+}
+
+@media screen and (min-width:427px) and (max-width:768px){
+    .nav-current-img{
+        margin-left: 5px;
+        width: 45px;
+    }
+    .nav-search-img{
+        width: 45px !important;
+    }
+    .nav-whishlist-img{
+        margin-left: 5px;
+        width: 45px;
+    }
+    .my-choice1 .badge{
+        left: 35px;
+    }
+    .bottom-2{
+        border-left: none;
+        border-right: none;
+    }
+    .bottom-3{
+        border-right: none;
+    }
+}

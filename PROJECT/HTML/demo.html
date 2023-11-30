@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/demo.css">
+    <link rel="stylesheet" href="../CSS/common.css">
+    <link rel="stylesheet" href="../../bootstrap-5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        .box{
+            width: 300px;
+            border: 1px solid black;
+            height: 300px;
+            margin: 10px;
+            transition: all 2s;
+            overflow: hidden;
+            
+        }
+       
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <div class="row g-0">
+                <nav class="navbar navbar-expand-lg navbar-light row">
+                    <div class="container">
+                        <a class="navbar-brand col-3 flex-grow-1" href="#">
+                            <img src="../IMAGE/logo.png" alt="" srcset="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-sm-auto mb-2 mb-lg-0">
+    
+                                <li class="nav-item">
+                                    <div class="btn-group upper-nav main-nav">
+                                        <a href="index.html" type="button" class="btn" aria-expanded="false">Home
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                        <ul class="dropdown-menu head-dropbox dropdown-menu-dark">
+                                            <li><a class="dropdown-item" href="#">Home Main</a></li>
+                                            <li><a class="dropdown-item" href="#">Home Two</a></li>
+                                            <li><a class="dropdown-item" href="index.html">Home Three</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+    
+                                <li class="nav-item upper-nav main-nav ms-2 ms-sm-0">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+    
+                                <li class="nav-item">
+                                    <div class="btn-group main-nav upper-nav">
+                                        <a href="#" type="button" class="btn" aria-expanded="false">
+                                            Shop
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                        <ul class="dropdown-menu head-dropbox dropdown-menu-dark">
+                                            <li><a class="dropdown-item" href="product-details.html">Shop Page</a></li>
+                                            <li><a class="dropdown-item" href="shop-sidebar.html">Shop Sidebar</a></li>
+                                            <li><a class="dropdown-item" href="product-details.html">Product Details</a></li>
+                                            <li><a class="dropdown-item" href="#">Shoping Cart</a></li>
+                                            <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                                            <li><a class="dropdown-item" href="#">Whishlist</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+    
+                                <li class="nav-item">
+                                    <div class="btn-group main-nav upper-nav">
+                                        <a href="#" type="button" class="btn" aria-expanded="false">Pages
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                        <ul class="dropdown-menu head-dropbox dropdown-menu-dark">
+                                            <li><a class="dropdown-item" href="#">About Page</a></li>
+                                            <li><a class="dropdown-item" href="product-details.html">Product Details</a></li>
+                                            <li><a class="dropdown-item" href="#">Shoping Cart</a></li>
+                                            <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                                            <li><a class="dropdown-item" href="#">Whishlist</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+    
+                                <li class="nav-item">
+                                    <div class="btn-group main-nav upper-nav">
+                                        <a href="#" type="button" class="btn" aria-expanded="false">Blog
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                        <ul class="dropdown-menu head-dropbox dropdown-menu-dark">
+                                            <li><a class="dropdown-item" href="blog-page.html">Blog Page</a></li>
+                                            <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+    
+                                <li class="nav-item upper-nav main-nav ms-2 ms-sm-0">
+                                    <a class="nav-link" href="contact.html"> Contact</a>
+                                </li>
+    
+                            </ul>
+    
+                        </div>
+    
+                        <div class="col-3 col-sm-2">
+                            <div class="row">
+                                <div class="col-4 my-choice1">
+                                    <a href="#" class="position-relative">
+                                        <div class="nav-search-img"></div>
+                                        <span
+                                            class="position-absolute fs-6 translate-middle badge rounded-circle bg-danger">
+                                            2
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+                                    </a>
+    
+                                </div>
+                                <div class="col-4 ">
+                                    <a href="#" class="position-relative">
+                                        <div class="nav-whishlist-img btn-group main-nav upper-nav my-choice1">
+                                            <span
+                                            class="position-absolute fs-6 translate-middle badge rounded-circle bg-danger">
+                                            2
+                                            <span class="visually-hidden">unread messages</span>
+                                            </span>
+                                        <ul class="dropdown-menu head-dropbox dropdown-menu-dark">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <div class="alert  alert-dismissible fade show " role="alert">
+                                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                        <div class="drop-hover-box">
+                                                            <img src="../IMAGE/head1.jpg" alt="">
+                                                            <div class="drop-hover-content">
+                                                                <p>
+                                                                    Pure Nature Product
+                                                                </p>
+                                                                <p>QTY : 1</p>
+                                                                <p>$35.00</p>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <div class="alert  alert-dismissible fade show " role="alert">
+                                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                        <div class="drop-hover-box">
+                                                            <img src="../IMAGE/head2.jpg" alt="">
+                                                            <div class="drop-hover-content">
+                                                                <p>
+                                                                    Pure Nature Product
+                                                                </p>
+                                                                <p>QTY : 1</p>
+                                                                <p>$35.00</p>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-item pt-2 pb-2 border-bottom-0 subtotal">
+                                                <div class= "d-flex justify-content-between">
+                                                    <p>Subtotal</p>
+                                                    <p>$70.00</p>
+                                                </div>
+                                                <button>CHECKOUT</button>
+                                            </li>
+                                            
+                                        </ul>
+                                        </div>
+                                        
+                                    </a>
+    
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="position-relative">
+                                        <div class="nav-current-img btn-group main-nav upper-nav my-choice1">
+                                             <span
+                                                    class="position-absolute fs-6 translate-middle badge rounded-circle bg-danger">
+                                                    2
+                                                    <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                                <ul class="dropdown-menu head-dropbox dropdown-menu-dark">
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">
+                                                            <div class="alert  alert-dismissible fade show " role="alert">
+                                                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                                <div class="drop-hover-box">
+                                                                    <img src="../IMAGE/head1.jpg" alt="">
+                                                                    <div class="drop-hover-content">
+                                                                        <p>
+                                                                            Pure Nature Product
+                                                                        </p>
+                                                                        <p>QTY : 1</p>
+                                                                        <p>$35.00</p>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">
+                                                            <div class="alert  alert-dismissible fade show " role="alert">
+                                                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                                <div class="drop-hover-box">
+                                                                    <img src="../IMAGE/head2.jpg" alt="">
+                                                                    <div class="drop-hover-content">
+                                                                        <p>
+                                                                            Pure Nature Product
+                                                                        </p>
+                                                                        <p>QTY : 1</p>
+                                                                        <p>$35.00</p>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">
+                                                            <div class="alert  alert-dismissible fade show " role="alert">
+                                                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                                <div class="drop-hover-box">
+                                                                    <img src="../IMAGE/head3.jpg" alt="">
+                                                                    <div class="drop-hover-content">
+                                                                        <p>
+                                                                            Pure Nature Product
+                                                                        </p>
+                                                                        <p>QTY : 1</p>
+                                                                        <p>$35.00</p>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="dropdown-item pt-2 pb-2 border-bottom-0 subtotal">
+                                                        <div class= "d-flex justify-content-between">
+                                                            <p>Subtotal</p>
+                                                            <p>$105.00</p>
+                                                        </div>
+                                                        <button>CHECKOUT</button>
+                                                    </li>
+                                                    
+                                                </ul>
+                                        </div>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+   
+    <script src="../../bootstrap-5.1.3/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+<!-- <header id="main-header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="../IMAGE/logo.png" alt="" srcset="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <div class="btn-group upper-nav main-nav">
+                    <a href="#" type="button" class="btn"  aria-expanded="false">  
+                        Home  
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu head-dropbox dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Login</a></li>
+                    <li><a class="dropdown-item" href="#">Register</a></li>
+                    <li><a class="dropdown-item" href="#">Cart</a></li>
+                    <li><a class="dropdown-item" href="#">Checkout</a></li>
+                    <li><a class="dropdown-item" href="#">Whishlist</a></li>
+                    </ul>
+                </div>
+              </li>
+
+              <li class="nav-item upper-nav main-nav">
+                <a class="nav-link" href="#">About</a>
+              </li>
+
+              <li class="nav-item">
+                <div class="btn-group main-nav upper-nav">
+                    <a href="#" type="button" class="btn"  aria-expanded="false">  
+                        Shop  
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu head-dropbox dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Login</a></li>
+                    <li><a class="dropdown-item" href="#">Register</a></li>
+                    <li><a class="dropdown-item" href="#">Cart</a></li>
+                    <li><a class="dropdown-item" href="#">Checkout</a></li>
+                    <li><a class="dropdown-item" href="#">Whishlist</a></li>
+                    </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="btn-group main-nav upper-nav">
+                    <a href="#" type="button" class="btn"  aria-expanded="false">  
+                        Pages  
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu head-dropbox dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Login</a></li>
+                    <li><a class="dropdown-item" href="#">Register</a></li>
+                    <li><a class="dropdown-item" href="#">Cart</a></li>
+                    <li><a class="dropdown-item" href="#">Checkout</a></li>
+                    <li><a class="dropdown-item" href="#">Whishlist</a></li>
+                    </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="btn-group main-nav upper-nav">
+                    <a href="#" type="button" class="btn"  aria-expanded="false">  
+                        Blog  
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu head-dropbox dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Login</a></li>
+                    <li><a class="dropdown-item" href="#">Register</a></li>
+                    <li><a class="dropdown-item" href="#">Cart</a></li>
+                    <li><a class="dropdown-item" href="#">Checkout</a></li>
+                    <li><a class="dropdown-item" href="#">Whishlist</a></li>
+                    </ul>
+                </div>
+              </li>
+
+              <li class="nav-item upper-nav main-nav">
+                <a class="btn nav-link" href="#" type="button">Contact</a>
+              </li>
+              
+            </ul>
+            
+
+           <div class="my-choice d-flex pt-3">
+                <ul>
+                    <li class="upper-nav main-nav">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li>
+                    <li class="upper-nav main-nav">
+                        <a href="#" class="position-relative">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="position-absolute fs-6 translate-middle badge rounded-circle bg-danger">
+                                2
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="upper-nav main-nav">
+                        <a href="#" class="position-relative">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="position-absolute fs-6 translate-middle badge rounded-circle bg-danger">
+                                2
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+          </div>
+        </div>
+      </nav>
+   </header> -->
